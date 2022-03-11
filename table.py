@@ -285,7 +285,7 @@ class Table:
                 if self._player.player_chips >= self.BET:
                     self._bet_button.draw(self._screen)
                 elif self._player.player_chips < self.BET:
-                    self._screen.blit(pygame.font.Font(None, 45).render("Oh no, you're out of chips :( :( :(", False, '#FFFFFF'), (200, 600))
+                    self._screen.blit(pygame.font.Font(None, 45).render("Oh no, you're out of chips :( :( :(", False, '#FFFFFF'), (100, 450))
                     pygame.display.update()
                 self.start_screen_event_catcher()
             if not self._quit_on_start_screen:
